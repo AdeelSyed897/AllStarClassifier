@@ -55,7 +55,7 @@ if playerName:
         status_col, prob_col = st.columns([2, 1])
 
         prob = player.AllStarProb()
-        if prob >= 0.29:
+        if prob >= 0.3434:
             status_col.success("⭐️ ALL-STAR!")
         else:
             status_col.error("❌ NOT AN ALL-STAR")
@@ -69,5 +69,5 @@ st.info(
     "Important note: the output is a model score, not a literal probability. " \
     "Usually, if the model score is above 50% that means they're an all star, " \
     "but that would only result in 15 all stars. I lowered the thresehold to " \
-    "29% so there's exactly 24 all stars. "
+    "34.34% so there's exactly 24 all stars. "
 )
